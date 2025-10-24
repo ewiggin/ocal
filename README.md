@@ -25,7 +25,7 @@ Time tracker for hackers (inspired by wcal)
 ## Installation
 
 ```
-$ curl -sSL https://github.com/ewiggin/ocal/releases/latest/download/install.sh | bash
+$ curl -sSL https://raw.githubusercontent.com/ewiggin/ocal/refs/heads/main/install.sh | bash
 $ ocal
 ```
 
