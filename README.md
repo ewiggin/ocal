@@ -22,19 +22,10 @@ Time tracker for hackers (inspired by wcal)
   </a>
 </p>
 
-## Requisites
-
-```
-$ curl -fsSL https://deno.land/install.sh | sh
-```
-
 ## Installation
 
 ```
-$ git clone https://github.com/ewiggin/ocal.git
-$ cd ocal
-$ deno compile --allow-read --allow-write --allow-run=cal --output ocal ./main.ts
-$ mv ocal /usr/local/bin # In MacOS, move your executable to your system binaries directory.
+$ curl -sSL https://github.com/ewiggin/ocal/releases/latest/download/install.sh | bash
 $ ocal
 ```
 
