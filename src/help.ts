@@ -1,4 +1,7 @@
+import { showLogo } from "./utils/showLogo.ts";
+
 export const help = () => {
+  showLogo();
   console.log(`
 Usage: ocal [option]
 

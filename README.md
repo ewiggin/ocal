@@ -16,6 +16,12 @@
 
 Time tracker for hackers (inspired by wcal)
 
+<p align="center">
+  <a href="https://github.com/ewiggin/ocal">
+    <img alt="ocal gif demostration" src="https://github.com/ewiggin/ocal/raw/main/ocal.gif" width="750">
+  </a>
+</p>
+
 ## Requisites
 
 ```

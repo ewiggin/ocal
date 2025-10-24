@@ -1,7 +1,7 @@
 {
   "name": "@bosoft/ocal",
   "description": "A terminal time tracker for hackers",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "exports": "./mod.ts",
   "tasks": {
     "run": "deno run --allow-read --allow-write --allow-run=cal main.ts",
