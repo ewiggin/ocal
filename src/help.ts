@@ -1,10 +1,5 @@
-# ocal
-
-Time tracker for hackers (inspired by wcal)
-
-```
-$ ocal help
-
+export const help = () => {
+  console.log(`
 Usage: ocal [option]
 
 Options:
@@ -14,4 +9,5 @@ Options:
   delete <int:id>                 Delete an event from the calendar.
   list   <int:month> <int:year>   List events in the calendar for current month, a specific month or for a full year.
   help                            Display this help message and exit.
-```
+`);
+};

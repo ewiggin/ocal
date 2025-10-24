@@ -1,0 +1,14 @@
+{
+  "name": "@bosoft/ocal",
+  "description": "A terminal time tracker for hackers",
+  "version": "0.0.1",
+  "tasks": {
+    "run": "deno run --allow-read --allow-write --allow-run=cal main.ts",
+    "dev": "deno run --watch --allow-read --allow-write --allow-run=cal main.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "@/": "./src/",
+    "@/utils": "./src/utils/mod.ts"
+  }
+}
