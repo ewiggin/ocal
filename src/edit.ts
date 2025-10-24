@@ -1,4 +1,4 @@
-import { Timestamp } from "@/interfaces/timestamp.d.ts";
+import type { Timestamp } from "@/interfaces/timestamp.d.ts";
 import { getStore, Logger, persistStore, prompty } from "@/utils";
 
 const editTimestamp = (timestamp: Timestamp) => {

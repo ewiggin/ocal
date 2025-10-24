@@ -1,5 +1,5 @@
-import { Store } from "@/interfaces/store.d.ts";
-import { Timestamp } from "@/interfaces/timestamp.d.ts";
+import type { Store } from "@/interfaces/store.d.ts";
+import type { Timestamp } from "@/interfaces/timestamp.d.ts";
 import { getStore, Logger, showCalendar } from "@/utils";
 
 let isYearArgument = false;

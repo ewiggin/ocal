@@ -1,4 +1,4 @@
-import { Timestamp } from "./timestamp.d.ts";
+import type { Timestamp } from "./timestamp.d.ts";
 
 export interface Store {
   company: string;

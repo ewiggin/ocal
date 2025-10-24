@@ -1,5 +1,6 @@
-import { Store } from "@/interfaces/store.d.ts";
+import type { Store } from "@/interfaces/store.d.ts";
 import { fileExists, Logger, persistStore, prompty } from "@/utils";
+import { showLogo } from "./utils/showLogo.ts";
 
 const createStore = (): Store => {
   console.log("To init a company calendar please add the next info:");
@@ -31,6 +32,7 @@ export const init = async () => {
       throw new Error("Calendar file already exists");
     }
 
+    showLogo();
     const store = createStore();
     persistStore(store);
     Logger.done();
