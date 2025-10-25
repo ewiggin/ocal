@@ -31,14 +31,19 @@ BINARY_NAME="${APP_NAME}-${OS}-${ARCH}"
 # Full download URL
 BINARY_URL="${RELEASE_BASE}/${BINARY_NAME}"
 
+echo "-----------------------------------------------------------------------------------------------------------"
+echo "⚠ Will download and install ${APP_NAME} binary to ${INSTALL_DIR}, so privileges are required for installation"
+echo "-----------------------------------------------------------------------------------------------------------"
 # --------------------------
 # Download and install
 # --------------------------
-echo "Downloading ${APP_NAME} binary from ${BINARY_URL}..."
-curl -L "$BINARY_URL" -o "$INSTALL_DIR/$APP_NAME"
+echo "✔ Downloading ${APP_NAME} binary from ${BINARY_URL}..."
+sudo curl -L "$BINARY_URL" -o "$INSTALL_DIR/$APP_NAME"
 
-echo "Setting executable permissions..."
-chmod +x "$INSTALL_DIR/$APP_NAME"
+echo "✔ Setting executable permissions..."
+sudo chmod +x "$INSTALL_DIR/$APP_NAME"
 
-echo "Installation complete!"
+echo "✔ Installation complete!"
+echo ""
 echo "You can now run '$APP_NAME' from anywhere in your terminal."
+echo ""
