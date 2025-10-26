@@ -39,7 +39,10 @@ const printTimestampLine = (
   const hours = String(timestamp.hours).padStart(5, " ");
   const when = formattedDate.padStart(15, " ");
   const message = timestamp.message;
-  const totalLine = `${rate * Number(timestamp.hours)}`.padStart(3, " ");
+  const totalLine = `${rate * Number(timestamp.hours)}`.padStart(3, " ").padEnd(
+    7,
+    " ",
+  );
 
   console.log(
     `● ${id} ${hours}h %c${currency}${totalLine} %c${when} %c${message}`,
@@ -84,7 +87,11 @@ const calcTotalAndShowList = async (
   Logger.line(getPad());
   console.log("");
 
-  await showCalendar(month, year);
+  const events = thisMonthTimestamps.map((item) => {
+    const eventDate = new Date(item.when);
+    return [eventDate.getMonth(), eventDate.getDate()];
+  });
+  await showCalendar(month, year, events);
   Logger.line(getPad());
   calcAndPrintTotals(totalHours, rate, currency);
   console.log("");
